@@ -5,9 +5,11 @@ a = np.random.randn(5)  # a.shape = (5,)
 print(a)
 print(a.T)
 print(np.dot(a, a.T), "\n")
+assert a.shape == (5,)
 
 # Vector
 a = np.random.randn(5, 1)  # a.shape = (5,1)
 print(a)
 print(a.T)
 print(np.dot(a, a.T), "\n")
+assert a.shape == (5, 1)
